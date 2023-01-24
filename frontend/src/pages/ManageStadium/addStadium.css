@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Libre+Baskerville:ital@1&family=Sansita+Swashed:wght@300&display=swap');
+/* 
+.form1{
+    background-color: #f5f5f5;
+    
+
+    background: linear-gradient(-45deg, #ee7752, #391b80, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+    padding: 7.5vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    flex-basis: content;
+    color: white;
+} */
+
+.addStadium-img{
+    width:100vw;
+    display: flex;
+    z-index: 9;
+    height: 100vh;
+    overflow: hidden;
+    background-color: cover;
+}
+
+.addStadiumForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 3.5vh;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40rem;
+        height: 90vh;
+        padding: 1.5rem;
+        box-sizing: border-box;
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 0.625rem;
+        overflow:hidden;
+}
+
+.addStadiumForm .inputBox {
+    position: relative;
+    width: 30rem;
+    color: white;
+  }
+
+  .addStadiumForm h2 {
+    margin: 0 0 1.875rem;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+
+  .scroll{
+    overflow: scroll;
+
+  }
+/* .box h2 {
+    margin: 0 0 1.875rem;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  
+  
+  .box .inputBox input {
+    width: 100%;
+    padding: 0.625rem 0;
+    font-size: 1rem;
+    color: #fff;
+    letter-spacing: 0.062rem;
+    margin-bottom: 1.875rem;
+    border: none;
+    border-bottom: 0.065rem solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  
+  .box .inputBox label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.625rem 0;
+    font-size: 1rem;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  .box .inputBox input:focus ~ label,
+  .box .inputBox input:valid ~ label,
+  .box .inputBox input:not([value=""]) ~ label {
+    top: -1.125rem;
+    left: 0;
+    color: #03a9f4;
+    font-size: 1rem;
+  } */

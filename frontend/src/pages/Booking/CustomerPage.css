@@ -1,0 +1,25 @@
+.customerPage-img{
+    width:100vw;
+    display: flex;
+    z-index: 9;
+    height: 100vh;
+    overflow: hidden;
+    background-color: cover;
+}
+
+.customer_wel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50rem;
+        padding: 1.5rem;
+        box-sizing: border-box;
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 0.625rem;
+        text-align: center;
+}

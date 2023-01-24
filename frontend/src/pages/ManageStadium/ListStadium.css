@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Libre+Baskerville:ital@1&family=Sansita+Swashed:wght@300&display=swap');
+
+
+
+.listStadium-img{
+    width:100vw;
+    display: flex;
+    z-index: 9;
+    height: 100vh;
+    overflow: hidden;
+    background-color: cover;
+    /* object-fit: fill; */
+}
+
+.listStadiumTable{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 3.4vh;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90rem;
+        height: 90vh;
+        padding: 1.5rem;
+        box-sizing: border-box;
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 0.625rem;
+        color: white;
+        overflow: hidden;
+       /* font-size: larger; */
+       font-size: larger;
+}
+
+.scrollit{
+    overflow: scroll;
+    width: 90vw;
+}
+.listStadiumTable h2 {
+    margin: 0 0 1.875rem;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }

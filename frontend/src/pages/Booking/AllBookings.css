@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Libre+Baskerville:ital@1&family=Sansita+Swashed:wght@300&display=swap');
+
+/* .table1{
+    background-color: #f5f5f5;
+    
+    
+    background: linear-gradient(-45deg, #ee7752, #391b80, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    margin-top: 7.5vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    width: 100vw;
+    color: white;
+}
+.th{
+    width: 143px;
+} */
+.heading{
+    background-color: black;
+}
+.bookings-img{
+    width:100vw;
+    display: flex;
+    z-index: 9;
+    height: 100vh;
+    overflow: hidden;
+    background-color: cover;
+}
+
+.bookingsTable{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 3.4vh;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90rem;
+        height: 90vh;
+        padding: 1.5rem;
+        box-sizing: border-box;
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 0.625rem;
+        color: white;
+        overflow: hidden;
+       /* font-size: larger; */
+       font-size: larger;
+}
+
+.bookingsTable h2 {
+    margin: 0 0 1.875rem;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
