@@ -44,3 +44,13 @@
     color: #fff;
     text-align: center;
   }
+
+.edit_icon{
+    background-color: #fff;
+}
+
+.modal_css{
+    background-color: black;
+    color: #fff;
+    /* align-items: center; */
+}

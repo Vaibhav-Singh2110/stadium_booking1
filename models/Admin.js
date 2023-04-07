@@ -32,8 +32,8 @@ const AdminSchema= new Schema({
             required:true
         },
         AddedAt:{
-            type: Date,
-            default: new Date()
+            type: String,
+            required:true
         }
     }]
     

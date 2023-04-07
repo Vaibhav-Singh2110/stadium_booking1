@@ -36,7 +36,7 @@ const AddStadium = () => {
       console.log(a);
 
       const res = await axios.post(
-        "http://localhost:5000/api/add/addStadium",a,config);
+        "/api/add/addStadium",a,config);
         console.log(config)
       console.log("res", res);
     } catch (err) {
@@ -88,6 +88,7 @@ const AddStadium = () => {
             className="form-control"
             id="stadium_name"
             placeholder="ABCD"
+            pattern="[A-Za-z]+" title="Only alphabet characters are allowed."
           />
         </div>
         <div className="form-group inputBox">
@@ -100,6 +101,7 @@ const AddStadium = () => {
             className="form-control"
             id="price"
             placeholder="XXXX"
+            pattern="[0-9]+" title="Only numbers are allowed."
           />
         </div>
         <div className="form-group inputBox">
@@ -112,6 +114,7 @@ const AddStadium = () => {
             className="form-control"
             id="state"
             placeholder=""
+            pattern="[A-Za-z]+" title="Only alphabet characters are allowed."
           />
         </div>
         <div className="form-group inputBox">
@@ -124,6 +127,7 @@ const AddStadium = () => {
             className="form-control"
             id="size"
             placeholder=""
+            pattern="[0-9]+" title="Only numbers are allowed."
           />
         </div>
 

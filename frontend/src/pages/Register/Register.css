@@ -43,6 +43,8 @@
     height: 100vh;
     overflow: hidden;
     background-color: cover;
+    /* margin-top: 2vh; */
+    /* padding-top: 45vh; */
 }
 .box-reg {
     

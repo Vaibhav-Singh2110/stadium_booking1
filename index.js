@@ -3,6 +3,9 @@ var bodyParser = require('body-parser')
 const express = require('express')
 const cors=require('cors');
 const app = express()
+const dotenv = require('dotenv').config();
+const PORT = process.env.PORT || 5000
+// const DB_URL = process.env.MONGO_URL
 app.use(express.json())
 app.use(cors('*'));
 
@@ -16,7 +19,7 @@ app.use(bodyParser.urlencoded({
   extended:true
 }))
 
-const DB = 'mongodb+srv://vaibhavsingh123:Vaibhav123@cluster0.sl7of6y.mongodb.net/?retryWrites=true&w=majority'
+const DB = process.env.MONGO_URL
 
 mongoose.connect(DB,{
   useNewUrlParser:true,
@@ -28,12 +31,17 @@ mongoose.connect(DB,{
 }).catch((err)=>console.log("No connection"))
 
 
+const path = require('path')
 
+    app.get('/',(req,res)=>{
+        app.use(express.static(path.resolve(__dirname,'frontend','build')))
+        res.sendFile(path.resolve(__dirname,'frontend','build','index.html'))
+    })
 app.use('/api/auth',require('./routes/auth'))
 app.use('/api/add',require('./routes/add_or_remove_stadium'))
 app.use('/api/book',require('./routes/booking'))
 
 
-app.listen(5000, () => {
+app.listen(PORT, () => {
   console.log(`Example app listening on port 5000`)
 })

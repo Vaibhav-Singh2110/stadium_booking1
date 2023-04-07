@@ -13,6 +13,7 @@ export default function Login() {
   const[password,setPassword] = useState("")
   // get data 
   const isLogin=useSelector((store)=>store.users.login)
+  const role=useSelector((store)=>store.users.type_of_user)
   const dispatch=useDispatch();
   // console.log("islogin",isLogin);
   const handleSubmit=async (e)=>{
@@ -25,7 +26,7 @@ export default function Login() {
         password : password
       }
       // console.log(a)
-      const res = await axios.post('http://localhost:5000/api/auth/login',a)
+      const res = await axios.post('/api/auth/login',a)
       console.log("encrypted data",res.data.authtoken);
       // token 
       const token = res.data.authtoken;
@@ -34,12 +35,12 @@ export default function Login() {
       const dt=jose.decodeJwt(token,"Vaibhav@2110")
       console.log("decrypted data",dt);
         //redirect
-        if(res.data.success ){
-          dispatch(setname(dt.name));
-          dispatch(setemail(dt.email));
-          dispatch(setlogin(true));
-          dispatch(settype_of_user(dt.type_of_user));
-          window.location = "/addStadium"
+          if(res.data.success){
+            dispatch(setname(dt.name));
+            dispatch(setemail(dt.email));
+            dispatch(setlogin(true));
+            dispatch(settype_of_user(dt.type_of_user));
+            window.location = '/red'
         }
         else
           window.location = '/'

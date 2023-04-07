@@ -33,8 +33,8 @@ export default function App() {
       {islogin? <Route path ='/admin' element={<AdminPage/>}></Route>:<Route path='/admin' element={<Login/>}/>}
       {islogin? <Route path ='/customer' element={<CustomerPage/>}></Route>:<Route path='/customer' element={<Login/>}/>}
 
-      {islogin && role === "ADMIN"? <Route path ='/' element={<AdminPage/>}></Route>:<Route path='/admin' element={<Login/>}/>}
-      {islogin && role === "USER"? <Route path ='/' element={<CustomerPage/>}></Route>:<Route path='/customer' element={<Login/>}/>}
+      {islogin && role === "ADMIN"? <Route path ='/red' element={<AdminPage/>}></Route>:<Route path='/admin' element={<Login/>}/>}
+      {islogin && role === "USER"? <Route path ='/red' element={<CustomerPage/>}></Route>:<Route path='/customer' element={<Login/>}/>}
 
       {/* <Route path ='/ListStadium' element={<ListStadium/>}></Route> */}
       {islogin? <Route path ='/book' element={<Book/>}></Route>:<Route path='/book' element={<Login/>}/>}

@@ -22,7 +22,7 @@ const AllBookings = () => {
   useEffect(() => {
     
     axios
-      .get(`http://localhost:5000/api/book/myBookings/${email}`, config)
+      .get(`/api/book/myBookings/${email}`, config)
       .then((response) => {
         // console.log(response.data[0].stadium_booked[0].price)
         setBookingData(response.data);
@@ -47,13 +47,13 @@ const AllBookings = () => {
         </Tr>
       </Thead>
       <Tbody>
-      {bookingData.map((book,key) => (
+      {bookingData.stadium_booked.map((book,key) => (
               <Tr key={key}>
                 
-                <Td>{book.stadium_booked[0].stadium_name}</Td>
-                <Td>{book.stadium_booked[0].price}</Td>
-                <Td>{book.stadium_booked[0].state}</Td>
-                <Td>{book.stadium_booked[0].BookedAt}</Td>
+                <Td>{book.stadium_name}</Td>
+                <Td>{book.price}</Td>
+                <Td>{book.state}</Td>
+                <Td>{book.BookedAt}</Td>
                  
               </Tr>
             ))}

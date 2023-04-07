@@ -24,11 +24,12 @@ export default function Register() {
 
       }
       console.log(a)
-      const res = await axios.post('http://localhost:5000/api/auth/createuser',a)
+      const res = await axios.post('/api/auth/createuser',a)
       console.log("res",res)
       // if(res.data){
       //     window.location.replace('http://localhost:5000/api/auth/login')
       // }
+      window.location = '/login'
      }
       catch(err){
             console.log(err)
@@ -54,7 +55,7 @@ export default function Register() {
         <h2>Register</h2>
       <div className="form-group inputBox">
     
-    <input type="text" onChange={e => setName(e.target.value)} name="name" value={name} className="form-control" id="Name" aria-describedby="emailHelp" placeholder="Enter name"/>
+    <input type="text" onChange={e => setName(e.target.value)} name="name" value={name} className="form-control" id="Name" aria-describedby="emailHelp" placeholder="Enter name"  pattern="[A-Za-z]+" title="Only alphabet characters are allowed."/>
     {/* <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small> */}
     <label >Name</label>
   </div>

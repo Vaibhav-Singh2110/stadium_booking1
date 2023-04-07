@@ -17,7 +17,7 @@ const AdminPage = () => {
     <img src={admin} className="img_edit"></img>
     <div className="admin_wel">
     
-    <h1><span>WELCOME BACK! {name}</span></h1>
+    <h2><span>WELCOME BACK! {name}</span></h2>
         <button className="btn btn-success my-2 btn-lg md-10" onClick={routeChange} >Add Stadiums</button> 
     <button className="btn btn-primary my-2 btn-lg" onClick={routeChange1}>Manage Stadiums</button> 
     <button className="btn btn-primary my-2 btn-lg" onClick={routeChange1}>All Stadiums</button> 
