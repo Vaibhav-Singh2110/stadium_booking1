@@ -126,7 +126,7 @@ const Book = () => {
         <div className="form-group SelectBox">
           <label for="exampleFormControlSelect1">Select Stadium</label>
           <select className="form-control"  ref={InputRef}>
-            {stadiumData.map((stadi, key) => (
+            {stadiumData && stadiumData.map((stadi, key) => (
               <option key={key}>{stadi.stadium_name}</option>
             ))}
           </select>

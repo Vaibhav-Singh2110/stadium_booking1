@@ -47,7 +47,7 @@ const AllBookings = () => {
         </Tr>
       </Thead>
       <Tbody>
-      {bookingData.stadium_booked.map((book,key) => (
+      {bookingData.stadium_booked && bookingData.stadium_booked.map((book,key) => (
               <Tr key={key}>
                 
                 <Td>{book.stadium_name}</Td>
