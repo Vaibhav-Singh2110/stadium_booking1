@@ -257,7 +257,8 @@ const ListStadium = () => {
               </Tr>
             </Thead>
             <Tbody>
-              {stadiumData.stadium_owned && stadiumData.stadium_owned.map((stadi) => (
+              {stadiumData.stadium_owned && stadiumData.stadium_owned.map((stadi) => {
+                return(
                 <Tr>
                   <Td>{stadi.AddedAt}</Td>
                   <Td>{stadi.stadium_name}</Td>
@@ -285,7 +286,8 @@ const ListStadium = () => {
                   </Td>
 
                 </Tr>
-              ))}
+                )
+})}
             </Tbody>
           </Table>
         </div>
