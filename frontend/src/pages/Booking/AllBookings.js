@@ -22,7 +22,7 @@ const AllBookings = () => {
   useEffect(() => {
     
     axios
-      .get(`/api/book/myBookings/${email}`, config)
+      .get(`https://stadium-booking1-9neb.vercel.app/api/book/myBookings/${email}`, config)
       .then((response) => {
         // console.log(response.data[0].stadium_booked[0].price)
         setBookingData(response.data);

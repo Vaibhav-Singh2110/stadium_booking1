@@ -36,7 +36,7 @@ const AddStadium = () => {
       console.log(a);
 
       const res = await axios.post(
-        "/api/add/addStadium",a,config);
+        "https://stadium-booking1-9neb.vercel.app/api/add/addStadium",a,config);
         console.log(config)
       console.log("res", res);
     } catch (err) {

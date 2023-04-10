@@ -28,7 +28,7 @@ const ListStadium = () => {
   const email = useSelector((store) => store.users.email);
   useEffect(() => {
     axios
-      .get(`/api/add/listStadium/${email}`, config)
+      .get(`https://stadium-booking1-9neb.vercel.app/api/add/listStadium/${email}`, config)
       .then((response) => {
         // console.log(response.data[1].stadium_owned[0].stadium_name);
         setStadiumData(response.data);
@@ -59,7 +59,7 @@ const ListStadium = () => {
       console.log(a);
 
       const res = await axios.post(
-        `/api/add/updateStadium/${name}`,a,config);
+        `https://stadium-booking1-9neb.vercel.app/api/add/updateStadium/${name}`,a,config);
         console.log(config)
       console.log("res", res);
     } catch (err) {
@@ -85,7 +85,7 @@ const ListStadium = () => {
     try {
       console.log("name"+name);
       const res = await axios.delete(
-        `/api/add/deleteStadium/${a}`,config);
+        `https://stadium-booking1-9neb.vercel.app/api/add/deleteStadium/${a}`,config);
         
         console.log(config)
       console.log("res", res);

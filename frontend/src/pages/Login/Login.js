@@ -26,7 +26,7 @@ export default function Login() {
         password : password
       }
       // console.log(a)
-      const res = await axios.post('/api/auth/login',a)
+      const res = await axios.post('https://stadium-booking1-9neb.vercel.app/api/auth/login',a)
       console.log("encrypted data",res.data.authtoken);
       // token 
       const token = res.data.authtoken;

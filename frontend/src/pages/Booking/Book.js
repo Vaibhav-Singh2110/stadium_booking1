@@ -23,7 +23,7 @@ const Book = () => {
   const email= useSelector((store)=>store.users.email)
   useEffect(() => {
     axios
-      .get("/api/add/listStadium", config)
+      .get("https://stadium-booking1-9neb.vercel.app/api/add/listStadium", config)
       .then((response) => {
         console.log("Search query ", response.data);
 
@@ -39,7 +39,7 @@ const Book = () => {
     try {
       const res = await axios
         .get(
-          `/api/book/search/${InputRef.current.value}`,
+          `https://stadium-booking1-9neb.vercel.app/api/book/search/${InputRef.current.value}`,
           config
         )
         .then((response) => {
@@ -70,7 +70,7 @@ const Book = () => {
     // console.log("456");
     window.location ="https://www.yepdesk.com/embed/buy-tickets/63c7a117c9e77c0001453795/private/5etg5a4sma"
     // console.log(specific)
-    let data = await axios.get(`/api/add/getAvailability/${InputRef.current.value}`,
+    let data = await axios.get(`https://stadium-booking1-9neb.vercel.app/api/add/getAvailability/${InputRef.current.value}`,
     config).then((response)=>{
       setBook(response.data);
       console.log(book);
@@ -85,14 +85,14 @@ const Book = () => {
         
       }
 
-      let message = await axios.post("/api/book/CustomerBookings",userbooking,config)
+      let message = await axios.post("https://stadium-booking1-9neb.vercel.app/api/book/CustomerBookings",userbooking,config)
       console.log("customer booking",message)
       
 
       const a=InputRef.current.value;
       console.log(a);
       // console.log(stadiumData)
-      let update = await axios.post(`/api/add/updateStadium/${InputRef.current.value}`,a,config)
+      let update = await axios.post(`https://stadium-booking1-9neb.vercel.app/api/add/updateStadium/${InputRef.current.value}`,a,config)
       console.log("update",update)
 
     }

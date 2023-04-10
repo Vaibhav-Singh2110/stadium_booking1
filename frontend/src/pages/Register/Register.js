@@ -24,7 +24,7 @@ export default function Register() {
 
       }
       console.log(a)
-      const res = await axios.post('/api/auth/createuser',a)
+      const res = await axios.post('https://stadium-booking1-9neb.vercel.app/api/auth/createuser',a)
       console.log("res",res)
       // if(res.data){
       //     window.location.replace('http://localhost:5000/api/auth/login')
